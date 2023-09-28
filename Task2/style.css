@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.documents-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 2rem;
+}
+.documents-container {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.documents-button {
+  appearance: none;
+  border: none;
+  background-color: rgb(10, 94, 129);
+  font-size: inherit;
+  color: white;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.documents_quote {
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  color: black;
+  position: relative;
+
+}
+
+.documents_quote::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  max-width: 10rem;
+  height:1px;
+  background-color: rgb(10, 94, 129);
+}

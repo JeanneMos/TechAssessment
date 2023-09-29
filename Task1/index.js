@@ -1,4 +1,7 @@
 const isPrime = (num) => {
+    if (typeof num !== 'number') {
+        return false;
+    }
     if (num <= 1) {
         return false;
     }

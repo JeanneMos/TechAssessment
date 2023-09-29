@@ -31,7 +31,8 @@ html, body {
 }
 
 .navigation-mobile-button:focus + .navigation-list, 
-.navigation-mobile-button:hover + .navigation-list {
+.navigation-mobile-button:hover + .navigation-list,
+.navigation-mobile-button:active + .navigation-list {
   display: flex;
   list-style: none;
   flex-direction: column;
@@ -64,6 +65,7 @@ html, body {
   outline-color: black;
   outline-offset: 3px;
 }
+
 .navigation-list-link:hover {
   border-bottom-color: rgb(10, 94, 129);
 }
